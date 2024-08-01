@@ -116,7 +116,7 @@ class UserController extends Controller
             $user->delete();
             return response()->json([
                 'success' => true,
-                'message' => 'detail user ' . $user->nama_user . ' berhasil dihapus',
+                'message' => 'detail user ' . $user->name . ' berhasil dihapus',
             ], 200);
         } catch (\Exception $e) {
             return response()->json([
